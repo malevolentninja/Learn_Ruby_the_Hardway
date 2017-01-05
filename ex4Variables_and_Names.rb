@@ -1,5 +1,5 @@
 cars = 100 # a variable named car total availabe is 100
-space_in_a_car = 4.0 # another variable with a floating integer of 4.0
+space_in_a_car = 4.0 # another variable with a floating integer of 4.0, making it 4 will change the result to 120 instead of 120.0
 drivers = 30 # variable with integer 30
 passengers = 90 # variable with integer 90
 cars_not_driven = cars - drivers # variable calling upon other variables to work out undriven cars
@@ -11,9 +11,9 @@ average_passengers_per_car = passengers / cars_driven #varialbe to work out aver
 
 puts "There are #{cars} cars available" #prints out a string which calls upon variable cars = 100
 puts "There are only #{drivers} drivers available."  #prints out a string calling upon variable drivers = 30
-puts "There will be #{carpool_capacity} people today." #prints out a string calling upon variable carpool_capacity which totals 120 in this case(dependent on the sum of two variables in this case
+puts "There will be #{carpool_capacity} people today." #prints out a string calling upon variable carpool_capacity which totals 120.0 in this case(dependent on the sum of two variables in this case
 puts "We have #{passengers} to carpool today." #prints out a string calling upon variable passengers = 90
 puts "we need to put about #{average_passengers_per_car} in each car." #prints out a string calling upon variable average_passengers_per_car which totals 3 per car (dependent on the sum of the two variables)
 
-
-# making space_in_car = 4 just makes the end result of people to be 120 instead of 120.0
+#se string interpolation, e.g. #{varName}is one way to avoid errors of converting numbers to string. 
+# another method is:  puts "There are " + cars.to_s + " cars available." the .to_s means convert number to string. 
