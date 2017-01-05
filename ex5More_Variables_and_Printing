@@ -20,3 +20,7 @@ puts "If I add #{age}, #{height}, and #{weight} I get #{age + height + weight}."
 
 # An alternative method is to use % (modulus) as a means of dividng left hand with the right and returning the remainder
 puts "If I add %d, %d, and %d I get %d." % [age, height, weight, age + height + weight] # This gets the same result as the intrepolation useage.
+
+
+#converting pounds to stone : 1 pound = 0.0714286 stone. 
+puts "He's %d stone heavy." % (weight * 0.0714286)
