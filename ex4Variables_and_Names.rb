@@ -15,5 +15,5 @@ puts "There will be #{carpool_capacity} people today." #prints out a string call
 puts "We have #{passengers} to carpool today." #prints out a string calling upon variable passengers = 90
 puts "we need to put about #{average_passengers_per_car} in each car." #prints out a string calling upon variable average_passengers_per_car which totals 3 per car (dependent on the sum of the two variables)
 
-#se string interpolation, e.g. #{varName}is one way to avoid errors of converting numbers to string. 
+#Use string interpolation, e.g. #{varName}is one way to avoid errors of converting numbers to string. 
 # another method is:  puts "There are " + cars.to_s + " cars available." the .to_s means convert number to string. 
