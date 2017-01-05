@@ -17,3 +17,6 @@ puts "His teeth are usually #{teeth} depending on the coffee." #prints string wi
 # this line is tricky, try to get it exactly right
 puts "If I add #{age}, #{height}, and #{weight} I get #{age + height + weight}."
 #the above line prints a string using the age, height and weight and another array calling upon age, height and weight variables
+
+# An alternative method is to use % (modulus) as a means of dividng left hand with the right and returning the remainder
+puts "If I add %d, %d, and %d I get %d." % [age, height, weight, age + height + weight] # This gets the same result as the intrepolation useage.
