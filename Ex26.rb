@@ -1,54 +1,53 @@
 =begin
   Errors still to fix : 
-  1. line 11
-  2. line 90
+  1. line 11 sort words  = wrong number of args , expected 1
+  2. line 90 main section
 
 =end
 
-#module Ex2
-
+module Ex26
 
   # This function will break up words for us.
-  def break_words(stuff)
+  def Ex26.break_words(stuff)
     words = stuff.split(' ')
     return words
   end
 
   # Sorts the words.
-  def sort_words(words)
+  def Ex26.sort_words(words)
     return words.sort
   end
 
   # Prints the first word after popping it off.
-  def print_first_word(words)
+  def Ex26.print_first_word(words)
     word = words.shift
     puts word
   end
 
   # Prints the last word after popping it off.
-  def print_last_word(words)
-    word = words.pop()
+  def Ex26.print_last_word(words)
+    word = words.pop
     puts word
   end
 
   # Takes in a full sentence and returns the sorted words.
-  def sort_sentence(sentence)
-    words = break_words(sentence)
-    return sort_words(words)
+  def Ex26.sort_sentence(sentence)
+    words = Ex26.break_words(sentence)
+    return Ex26.sort_words(words)
   end
 
   # Prints the first and last words of the sentence.
-  def print_first_and_last(sentence)
-    words = break_words(sentence)
-    print_first_word(words)
-    print_last_word(words)
+  def Ex26.print_first_and_last(sentence)
+    words = Ex26.break_words(sentence)
+    Ex26.print_first_word(words)
+    Ex26.print_last_word(words)
   end
 
   # Sorts the words then prints the first and last one.
-  def print_first_and_last_sorted(sentence)
+  def Ex26.print_first_and_last_sorted(sentence)
     words = sort_sentence(sentence)
-    print_first_word(words)
-    print_last_word(words)
+    Ex26.print_first_word(words)
+    Ex26.print_last_word(words)
   end
 
 
@@ -91,11 +90,11 @@ start_point = start_point / 10
 
 sentence = "All good things come to those who wait."
 words = break_words(sentence)
-sorted_words = sort_words(words)
-ex25.print_first_word(words)
-print_last_word (words)
-print_first_word(sort_words)
-print_last_word(sort_words)
-sorted_words = sort_sentence(sentence)
-print_first_and_last(sentence)
-print_first_and_last_sorted(sentence)
+Ex26.sorted_words = sort_words(words)
+Ex26.print_first_word(words)
+Ex26.print_last_word (words)
+Ex26.print_first_word(sort_words)
+Ex26.print_last_word(sort_words)
+Ex26.sorted_words = sort_sentence(sentence)
+Ex26.print_first_and_last(sentence)
+Ex26.print_first_and_last_sorted(sentence)
